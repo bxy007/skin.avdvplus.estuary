@@ -159,9 +159,10 @@
 					</control>
 				</control>
 			</control>
+			<!-- CPM geometry; hidden while VideoOSD draws the same time above the button lists. -->
 			<control type="label">
-				<centerleft>37.9%</centerleft>
-				<centertop>125</centertop>
+				<centerleft>50%</centerleft>
+				<centertop>132</centertop>
 				<width>50%</width>
 				<height>60</height>
 				<align>center</align>
@@ -169,11 +170,12 @@
 				<label>$VAR[SeekTimeLabelVar]</label>
 				<font>font45</font>
 				<shadowcolor>black</shadowcolor>
+				<visible>!Window.IsVisible(videoosd)</visible>
 				<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
 			</control>
 			<control type="label" id="40000">
 				<centerleft>50%</centerleft>
-				<centertop>175</centertop>
+				<centertop>180</centertop>
 				<width>50%</width>
 				<height>50</height>
 				<align>center</align>

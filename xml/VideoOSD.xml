@@ -32,6 +32,19 @@
 				<label>$VAR[OSDHelpTextVar]</label>
 				<shadowcolor>black</shadowcolor>
 			</control>
+			<!-- CPM SeekBar geometry (centertop 132 in h=190 → top 92 here).
+			     Width kept narrower than CPM: avdvplus shows several VS10 buttons on the right. -->
+			<control type="label">
+				<centerleft>38%</centerleft>
+				<top>92</top>
+				<width>30%</width>
+				<height>60</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>$VAR[SeekTimeLabelVar]</label>
+				<font>font45</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
 			<control type="group" id="200">
 				<include>Animation_BottomSlide</include>
 				<control type="grouplist" id="201">

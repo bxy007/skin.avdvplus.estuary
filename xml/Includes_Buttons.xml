@@ -18,23 +18,26 @@
 		<radioposx>1</radioposx>
 		<radioposy>0</radioposy>
 	</include>
+	<!-- Same footprint as skin.cpm.estuary.search: 76×76 slot, 50×50 ring at radiopos 13. -->
 	<include name="OSDSmallButton">
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
 				<textureradioonfocus colordiffuse="lightgreen">$PARAM[texture]</textureradioonfocus>
 				<textureradioonnofocus colordiffuse="lightgreen">$PARAM[texture]</textureradioonnofocus>
-				<textureradioofffocus>$PARAM[texture]</textureradioofffocus>
+				<textureradioofffocus colordiffuse="white">$PARAM[texture]</textureradioofffocus>
 				<textureradiooffnofocus>$PARAM[texture]</textureradiooffnofocus>
 				<textureradioondisabled colordiffuse="disabled">$PARAM[texture]</textureradioondisabled>
 				<textureradiooffdisabled colordiffuse="disabled">$PARAM[texture]</textureradiooffdisabled>
 				<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
 				<texturenofocus/>
-				<width>44</width>
-				<height>44</height>
-				<radiowidth>44</radiowidth>
-				<radioheight>44</radioheight>
-				<radioposx>1</radioposx>
-				<radioposy>0</radioposy>
+				<width>76</width>
+				<height>76</height>
+				<radiowidth>50</radiowidth>
+				<radioheight>50</radioheight>
+				<radioposx>13</radioposx>
+				<radioposy>13</radioposy>
+				<font></font>
+				<animation center="38,38" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
 				<onclick>$PARAM[onclick]</onclick>
 				<selected>$PARAM[selected]</selected>
 				<visible>Player.Process(videohwdecoder)</visible>

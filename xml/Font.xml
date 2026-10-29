@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-	<fontset id="Default" idloc="15109">
+	<!-- Same approach as skin.cpm.estuary.search: keep setting value "Default",
+	     but point fontset id="Default" at Arial for CJK. -->
+	<fontset id="Noto" idloc="15109">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font8</name>
@@ -162,7 +164,7 @@
 			<size>26</size>
 		</font>
 	</fontset>
-	<fontset id="Arial" idloc="31053">
+	<fontset id="Default" idloc="31053">
 		<!-- Arial Font better for non English -->
 		<font>
 			<name>font10</name>
