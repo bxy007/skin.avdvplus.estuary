@@ -177,7 +177,7 @@
 				<right>60</right>
 				<height>104</height>
 				<font>font12</font>
-				<align>justify</align>
+				<align>left</align>
 				<textcolor>button_focus</textcolor>
 				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
 			</control>
